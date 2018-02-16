@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head><% include ../partials/template/head.ejs %></head>
+  <body>
+     <div class="container">
+        <main role="main" class="col-1-sm">
+          <section id="localPress" class="center">
+            <ul>
+              <% drinks.forEach(function(drink) { %>
+                  <li><%= drink.name %> - <%= drink.drunkness %></li>
+              <% }); %>
+            </ul>
+          </section>
+        </main>
+      </div>
+  </body>
+</html>

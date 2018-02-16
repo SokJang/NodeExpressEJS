@@ -1,0 +1,39 @@
+// ==========================================================================
+// Common variables
+// ==========================================================================
+
+// Color Settings
+// ==========================================================================
+// standard typography colors
+$white: #FFF;
+$inProgress: #6ab187; // lagoon
+$overdue: #de7a22; // burnt orange
+$grey: #b7b8b6; // granite
+$done: #20948b; // sea
+
+// border colors
+$border: $grey;
+
+// background colors
+$bgOverdue: #f4cc70;
+$bgDone: $done;
+
+// UI
+// ==========================================================================
+//$firstLinkColor: $grey;
+//$firstLinkColorHover: $blue;
+
+//$secondLinkColor: $white;
+//$secondLinkColorMOver: $grey;
+
+// Typography
+// ==========================================================================
+$baseFont: 'Lato', sans-serif;
+$baseFontWeight: 400;
+$baseFontSize: 100%;
+$smallFontSize: 75%;
+$bigFontSize: 125%;
+$baseLineHeight: 1.3;
+$basefontColor: $grey;
+$baseFontLight: 100;
+$baseHeadlineFont: 900;

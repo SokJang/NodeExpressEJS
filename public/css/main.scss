@@ -1,0 +1,84 @@
+@import "normalize", "mixins", "typo_color", "grid";
+// base styling
+body{
+  font-family: $baseFont;
+  font-weight: $baseFontWeight;
+  font-size: $baseFontSize;
+  color: $basefontColor;
+  line-height: $baseLineHeight;
+  background: $white;
+}
+p, a{
+  	font-size: 100%; 
+  	padding-top: 0;
+  	margin-top: 0;
+}
+a{
+	font-weight: $baseFontWeight;
+	text-decoration: none;
+	color: $basefontColor;
+}
+h2{
+	font-weight: $baseHeadlineFont;
+	font-size: $bigFontSize;
+  color: $basefontColor;
+  margin-bottom: 5px;
+}
+span{
+	font-size: $smallFontSize;
+}
+.center {
+	margin: auto;
+  width: 100%;
+}
+.flex{
+	@include flexbox;
+	img{
+		max-width: 80px;
+		max-height: 80px;
+		@include flex-grow(1);
+	}
+	p{
+		@include flex-grow(2);
+	}
+}
+.arrow-right {
+  width: 0; 
+  height: 0; 
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid $basefontColor;
+  display: inline-block;
+}
+h1{
+	background: grey;
+	padding: 5px;
+	margin-bottom: 7px;
+}
+article {
+	padding: 5px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+article:nth-child(2n){
+	border-bottom: 1px solid $basefontColor;
+};
+time {
+	display: block;
+	padding-bottom: 5px;
+	font-size: 80%;
+}
+img {
+	padding-right: 10px;
+}
+@media only screen and (min-width: $breakpoint-medium){
+	.center {
+	  width: 73%;
+	}
+	.flex{
+	img{
+		max-width: 150px;
+		max-height: 150px;
+	}
+}
+}

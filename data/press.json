@@ -1,0 +1,16 @@
+[
+	{
+		"timestamp": 150892000,
+		"headline": "It's good to have friends.",
+		"link": "https://de.wikipedia.org/wiki/Der_Gigant_aus_dem_All",
+		"authorName": "Iron Giant and Hogarth",
+		"authorImageUrl": "http://localhost:3000/img/giant_hogarth.jpg"
+	},
+	{
+		"timestamp": 150892600,
+		"headline": "Out for a swim.",
+		"link": "https://en.wikipedia.org/wiki/The_Iron_Giant",
+		"authorName": "Hogart Hughes",
+		"authorImageUrl": "http://localhost:3000/img/hogarth.jpg"
+	}
+]

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head><% include ../partials/template/head.ejs %></head>
+  <body>
+     <div class="container">
+        <main role="main" class="col-1-sm">
+          <section id="localPress" class="center">
+            <h1>
+              <%= headline %>
+            </h1>
+            <% orderedByTimestamp.forEach(function(elem) { %>
+              <% elem.timestamp %>
+            <% }); %>
+            <% orderedByTimestamp.forEach(function(elem) { %>
+              <article>
+                <h2>
+                  <%= elem.headline %>
+                </h2>
+                <time>
+                  <% let date = new Date(elem.timestamp*1000); %>
+                  <% let formattedTime = date.toUTCString(); %>
+                  <%= formattedTime %>
+                </time>
+                <a href="<%= elem.link %>" class="flex">
+                  <img src="<%= elem.authorImageUrl %>" alt="<%= elem.authorName %>">
+                  <p>
+                    <span class="arrow-right"></span>
+                    More information about <%= elem.authorName %>
+                  </p>
+                </a>
+              </article>
+            <% }); %>
+          </section>
+        </main>
+      </div>
+  </body>
+</html>
