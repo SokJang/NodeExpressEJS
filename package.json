@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "watchjs": "./node_modules/.bin/eslint app.js routes/*js",
-    "watchapp": "nodemon -e css,ejs,js,json --watch app",
+    "watchjs": "./node_modules/.bin/eslint app routes/*js",
+    "watchapp": "./node_modules/.bin/nodemon -e css,ejs,js,json --watch app",
     "bundlecss": "node-sass --include-path scss public/css/main.scss > public/css/main.css",
     "deleteNodeModules": "rimraf node_modules"
   },
