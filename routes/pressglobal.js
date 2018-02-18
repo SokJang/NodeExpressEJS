@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router();
-const moment = require('moment');
 
 router.get('/pressglobal', function(req, res) {
   const pagetitle = 'data ordered by unix timestamp in app, reformatted in view';
